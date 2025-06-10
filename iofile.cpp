@@ -27,19 +27,5 @@ int main () {
     // menunjuk ke sebuah file 
     infile.open("contoh.txt");
     cout << endl << ">= Membuka dan membaca file " << endl;
-    //jika file ada maka 
-    if (infile.is_open())
-    {
-        // melakukan perulangan setiap baris
-        while (getline(infile, baris))
-        {
-            // dan tampilkan di sisi 
-            cout << baris << '\n';
-        }
-        //tutup file tersebt setelah selesai
-        infile.close();
-    }
-    //jika tidak ditemukan file maka akan menampilkan isi
-    else cout << "unable to open file";
-    return 0;
+
 }
